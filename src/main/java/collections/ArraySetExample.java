@@ -17,7 +17,7 @@ public class ArraySetExample
         list.add(new User ("Георгий"));
         list.add(new User ("Михаил" ));
 
-        cowSet = new CopyOnWriteArraySet<User>(list);
+        cowSet = new CopyOnWriteArraySet<>(list);
 
         System.out.println("Цикл с измением");
 

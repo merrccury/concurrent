@@ -57,9 +57,9 @@ public class SynchQueuesExample
                 String msg = null;
                 while (true) {
                     printMessage(BEFORE_TAKE);
-                    Thread.sleep(3000);
                     if (!((msg = drop.take()).equals(DONE))) {
                         System.out.println(msg);
+                        Thread.sleep(3000);
                     } else
                         break;
                     printMessage(AFTER_TAKE);
